@@ -1,0 +1,14 @@
+.animate {
+    animation: spin 4s infinite linear;
+    transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg) translateX(275px) translateY(65px);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(275px) translateY(65px);
+    }
+}
