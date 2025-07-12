@@ -5,7 +5,16 @@ export const page = {
     dataScreen: 3,
 };
 
+export const variantValue = {
+    primary: 'primary',
+    secondary: 'secondary',
+};
 
+export const sizeValue = {
+    small: 'small',
+    medium: 'medium',
+    large: 'large',
+};
 
 export const colors = {
     Green5: "#2F5249",

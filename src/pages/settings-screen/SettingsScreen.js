@@ -1,6 +1,6 @@
 
 import { Header } from '../../components/header/Header';
-import { page } from '../../utils/Constants';
+import { page, variantValue } from '../../utils/Constants';
 import { Button } from '../../components/button/Button';
 import style from './SettingsScreen.module.scss';
 
@@ -13,8 +13,8 @@ const SettingsScreen = ({ OnChagePage }) => {
       <Header titleValue={"Settings"}/>
       <div className={`container`}></div>
       <div className={style.buttonContainer}>
-        <div><Button onClick={HandelOnClick}>Default</Button></div>
-        <div><Button onClick={HandelOnClick}>Run</Button></div>
+        <div><Button variant={variantValue.secondary} onClick={HandelOnClick}>Default</Button></div>
+        <div><Button variant={variantValue.secondary} onClick={HandelOnClick}>Run</Button></div>
       </div>
     </>
   );
