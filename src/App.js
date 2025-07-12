@@ -3,17 +3,11 @@ import MainMenu from './pages/main-menu/MainMenu';
 import SettingsScreen from './pages/settings-screen/SettingsScreen';
 import LoadingScreen from './pages/loading-screen/LoadingScreen';
 import DataScreen from './pages/data-screen/DataScreen';
-
-export const page = {
-  mainManu: 0,
-  settingsScreen: 1,
-  loadingScreen: 2,
-  dataScreen: 3,
-}
+import { page } from './utils/Constants';
 
 const GetPage=({value, OnChagePage}) => {
   switch (value) {
-    case page.mainManu:
+    case page.mainMenu:
       return <MainMenu OnChagePage={OnChagePage}/>
     case page.settingsScreen:
       return <SettingsScreen OnChagePage={OnChagePage}/>
@@ -25,7 +19,7 @@ const GetPage=({value, OnChagePage}) => {
 }
 
 const App=() => {
-  const [screen,setScreen] = useState(page.mainManu);
+  const [screen,setScreen] = useState(page.mainMenu);
 
   const HandleChageScreen = value => {
     setScreen(value)

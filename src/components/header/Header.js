@@ -1,5 +1,5 @@
-import { LogoComponent } from "../imgs/logo"
-import { HelpButton } from "../help-button/helpButton"
+import { LogoComponent } from "../imgs/Logo"
+import { HelpButton } from "../help-button/HelpButton"
 import style from "./Header.module.scss"
 
 export const Header = ({titleValue}) =>

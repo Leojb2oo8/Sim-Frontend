@@ -1,7 +1,7 @@
 
 import { Header } from '../../components/header/Header';
-import { page } from '../../App';
-import { Button } from '../../components/button/button';
+import { page } from '../../utils/Constants';
+import { Button } from '../../components/button/Button';
 import style from './SettingsScreen.module.scss';
 
 const SettingsScreen = ({ OnChagePage }) => {

@@ -1,12 +1,12 @@
 
-import { page } from '../../App';
-import { Button } from '../../components/button/button';
+import { page } from '../../utils/Constants';
+import { Button } from '../../components/button/Button';
 import { Header } from '../../components/header/Header';
 import style from './DataScreen.module.scss';
 
 const DataScreen=({OnChagePage}) =>{
   const HandelOnClick=() =>{
-    OnChagePage(page.mainManu)
+    OnChagePage(page.mainMenu)
   }
   return (
     <>

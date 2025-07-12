@@ -1,8 +1,8 @@
 
-import { page } from '../../App';
-import { Button } from '../../components/button/button';
-import { HelpButton } from '../../components/help-button/helpButton';
-import { LogoComponent } from '../../components/imgs/logo';
+import { page } from '../../utils/Constants';
+import { Button } from '../../components/button/Button';
+import { HelpButton } from '../../components/help-button/HelpButton';
+import { LogoComponent } from '../../components/imgs/Logo';
 import style from './MainMenu.module.scss';
 
 const MainMenu=({OnChagePage}) =>{
