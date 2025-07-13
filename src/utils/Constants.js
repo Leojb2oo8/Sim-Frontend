@@ -11,6 +11,8 @@ export const variantValue = {
 };
 
 export const sizeValue = {
+    rounded: 'rounded',
+    xSmall: 'xSmall',
     small: 'small',
     medium: 'medium',
     large: 'large',
@@ -24,4 +26,6 @@ export const colors = {
     Green1: "#EEF8C8",
 
     BackgroundColour: "#EEF8C8",
+
+    Gray: "#D6D6D6",
 };

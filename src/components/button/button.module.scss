@@ -16,6 +16,26 @@
     color: $Green5;
 }
 
+.rounded {
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    line-height: .91;
+    align-items: flex-end;
+    font-family: "Nunito", sans-serif;
+    border: solid 3px;
+}
+
+.xSmall {
+    padding: 12px 0;
+    min-width: 80px;
+    border-radius: 50px;
+    font-size: 12px;
+}
 .small {
     padding: 15px 0;
     min-width: 120px;
