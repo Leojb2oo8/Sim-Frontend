@@ -20,14 +20,11 @@
     border-radius: 50%;
     height: 38px;
     width: 38px;
+    border: solid 3px;
 
     display: flex;
     justify-content: center;
-    font-size: 45px;
-    line-height: .91;
-    align-items: flex-end;
-    font-family: "Nunito", sans-serif;
-    border: solid 3px;
+    align-items: center;
 }
 
 .xSmall {

@@ -1,32 +1,73 @@
 @import "../../styles";
 
 .container {
-    margin: 0 30px 30px 30px;
-    width: 100%;
-    gap: 50px;
+  margin: 0 30px 30px 30px;
+  width: 100%;
+  gap: 50px;
 }
 
 .slider {
-    width: 100%;
+  width: 100%;
+
+  :global {
+    .ant-slider-handle {
+      &::after {
+        background-color: $Green3;
+        box-shadow: 0 0 0 2px $Green4;
+        width: 17px;
+        height: 17px;
+      }
+
+      &:focus::after,
+      &:active::after,
+      &:hover::after  {
+        box-shadow: 0 0 0 2.5px $Green4;
+        outline: 6px solid rgba(67, 112, 87, 0.2);
+        width: 17px;
+        height: 17px;
+      }
+
+
+    }
+    .ant-slider-handle::after {
+      box-shadow: 0 0 0 2px $Green4 !important;
+    }
+  }
+
 }
 
 .sliderContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .sliderTitle {
-    width: 100px;
-    text-align: center;
+  width: 100px;
+  text-align: center;
 }
 
 .sliderButtonsContainer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .normalCursor {
-    cursor: default;
+  cursor: default;
 }
+
+// :where(.css-dev-only-do-not-override-pjilya).ant-slider .ant-slider-handle::after {
+//     content: "";
+//     position: absolute;
+//     inset-block-start: 0;
+//     inset-inline-start: 0;
+//     width: 14px;
+//     height: 14px;
+//     background-color: #ff0000;
+//     box-shadow: 0 0 0 2px #91caff;
+//     outline: 0px solid transparent;
+//     border-radius: 50%;
+//     cursor: pointer;
+//     transition: inset-inline-start 0.2s, inset-block-start 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s, outline 0.2s;
+// }

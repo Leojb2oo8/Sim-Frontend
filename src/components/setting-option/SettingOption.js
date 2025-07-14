@@ -4,6 +4,9 @@ import style from './SettingOption.module.scss'
 import { Button } from '../button/Button';
 import { useState } from 'react';
 import { Input } from "../input/Input"
+import { AddImgComponent } from '../imgs/Add';
+import { MinusImgComponent } from '../imgs/Minus';
+
 
 export const SettingOption = ({ title = "Setting", name, min = 0, max = 100, step = 1, value = min, onChage }) => {
 
@@ -75,9 +78,9 @@ export const SettingOption = ({ title = "Setting", name, min = 0, max = 100, ste
                     }} />
             </div>
             <div className={`flex-center ${style.sliderButtonsContainer}`}>
-                <div><Button onClick={handleOnClickMin} size={sizeValue.rounded}>-</Button></div>
+                <div><Button onClick={handleOnClickMin} size={sizeValue.rounded}><AddImgComponent size='25' /></Button></div>
                 <div><Input onChange={handleOnChangeInput} value={currentValue} /></div>
-                <div><Button onClick={handleOnClickMax} size={sizeValue.rounded}>+</Button></div>
+                <div><Button onClick={handleOnClickMax} size={sizeValue.rounded}><MinusImgComponent size='25' /></Button></div>
             </div>
 
         </div>
